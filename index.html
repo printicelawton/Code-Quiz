@@ -7,16 +7,33 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Javascript Quiz</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        //create a card with a class id that I can later style with ccs
+      <div class="container"> 
+          // make question container that will come before our start
+          <div class="question-container" class="hide">
+          <div class="answer-buttons" class="btn-grid">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
+          </div>
+          </div>
+   
+        <div id="question-container" class="hide"></div>
+        //control section below
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start</button>
+            <button id="next-btn" class="next-btn hide">Start</button>
+        </div>
+          
+      </div> 
         
-        <script src="" async defer></script>
+        <script src="script.js"></script>
     </body>
 </html>
